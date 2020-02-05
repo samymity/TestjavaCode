@@ -9,7 +9,7 @@ interface RBI {
 }
 
 
-class SBI implements RBI {
+/*class SBI implements RBI {
 
     @Override
     public void deposit() {
@@ -17,15 +17,32 @@ class SBI implements RBI {
         System.out.println("  SBI deposit)");
 
     }
-}
+}*/
 
 
 public class Bank {
 
     public static void main(String[] args) {
 
-        RBI a = new SBI();
+   /*     RBI a = new SBI()
+        {
+            public void deposit() {
 
+                System.out.println("  SBI deposit)");
+
+            }
+
+        };
+*/
+
+        RBI a = () ->
+        {
+            System.out.println("  SBI deposit)");
+
+        };
+
+
+          
         a.deposit();
 
     }
