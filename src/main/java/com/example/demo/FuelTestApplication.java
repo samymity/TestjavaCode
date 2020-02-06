@@ -22,8 +22,8 @@ public class FuelTestApplication {
         ConfigurableApplicationContext context = SpringApplication.run(FuelTestApplication.class, args);
 
 
-        Pillar p1 = context.getBean(Pillar.class);
-        Pillar p2 = context.getBean(Pillar.class);
+        //      Pillar p1 = context.getBean(Pillar.class);
+        //      Pillar p2 = context.getBean(Pillar.class);
 
     }
 
