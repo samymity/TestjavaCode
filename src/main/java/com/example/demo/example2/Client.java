@@ -20,7 +20,7 @@ interface RBI {
 }*/
 
 
-public class Bank {
+public class Client {
 
     public static void main(String[] args) {
 
@@ -42,7 +42,6 @@ public class Bank {
         };
 
 
-          
         a.deposit();
 
     }
